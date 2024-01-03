@@ -16,5 +16,36 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    quotes: ["error", "single"],
+    "no-multi-spaces": "error",
+    "react/jsx-curly-spacing": [2, "never", {
+      "allowMultiline": false,
+      "spacing": {"objectLiterals": "always"}
+    }],
+    "react/jsx-boolean-value":true,
+    "jsx-a11y/alt-text": [ 2, {
+      "elements": [ "img", "object", "area", "input[type=\"image\"]" ],
+      "img": ["Image"],
+      "object": ["Object"],
+      "area": ["Area"],
+      "input[type=\"image\"]": ["InputImage"]
+    }],
+  "react/jsx-wrap-multilines":{
+    "declaration": "parens",
+    "assignment": "parens",
+    "return": "parens",
+    "arrow": "parens",
+    "condition": "ignore",
+    "logical": "ignore",
+    "prop": "ignore"
+  },
+  "react/self-closing-comp": ["error", {
+    "component": true,
+    "html": true
+  }],
+
+
+// bad
+
   },
 }
